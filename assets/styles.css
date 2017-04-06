@@ -523,7 +523,7 @@ p a {
 }
 
 .button:hover {
-    background: none;
+    background: white;
     color: #a50000
 }
 
