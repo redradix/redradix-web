@@ -1,0 +1,18 @@
+
+<% article = public.blog._data[current.source] %>
+
+<div class='container'>
+  <header id='header'>
+    <a href="/blog"><img src="/images/blog/logo.svg" /></a>
+    <h1 class='title'><%- article.title %></h1>
+    <h2 class='subtitle'><%- article.description %>, por <a href="<%- article.author_link %>" rel="nofollow"><%- article.author %></a></h2>
+  </header>
+
+  <div class='post-content'>
+    <%- yield %>
+  </div>
+</div>
+
+<div id='footer'>
+  <strong><a href="https://redradix.com">redradix</a> &copy; 2017</strong>
+</div>

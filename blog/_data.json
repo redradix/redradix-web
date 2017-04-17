@@ -1,0 +1,8 @@
+{
+  "my-first-post": {
+    "title": "My first post",
+    "description": "first attempt",
+    "author": "Lola",
+    "author_link": "https://twitter.com/lola"
+  }
+}

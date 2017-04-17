@@ -1,0 +1,21 @@
+
+<ol class='index-post-list'>
+
+  <% for(var slug in public.blog._data){ %>
+
+    <% article = public.blog._data[slug] %>
+
+    <li class='index-post'>
+      <h2 class='index-post-title'>
+        <a href="/blog/<%= slug %>"><%= article.title %></a>
+      </h2>
+      <p class='index-post-description'><%= article.description %></p>
+      <div class='meta'>
+        <div class='index-post-author'>
+          por <a href="<%= article.author_link %>" rel="nofollow"><%= article.author %></a>
+        </div>
+      </div>
+    </li>
+  <% }; %>
+
+</ol>
