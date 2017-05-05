@@ -1,8 +1,8 @@
 {
-  "my-first-post": {
-    "title": "My first post",
-    "description": "first attempt",
-    "author": "Lola",
-    "author_link": "https://twitter.com/lola"
+  "hora-de-aventuras": {
+    "title": "Hora de aventuras",
+    "description": "Empezamos el camino de dejar atrás ser emprendedores para pasar a ser empresarios",
+    "author": "Alej",
+    "author_link": "https://twitter.com/fuzzyalej"
   }
 }
