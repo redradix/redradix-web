@@ -4,7 +4,7 @@ Se trata de una parte muy pequeña de un proyecto mucho más complejo. Estamos d
 
 Quién me iba a decir hace 5 años cuando creamos Redradix que íbamos a llegar tan lejos.
 
-Me acuerdo las noches sin dormir en el sótano con humedades de Utopic_US. Había motivación, sudor y lágrimas. Luchábamos para conseguir un sueño y ya lo hemos conseguido: hemos pasado de ser 4 amigos frikis a tener una empresa con 20 trabajadores.
+Me acuerdo de las noches sin dormir en el sótano con humedades de Utopic_US. Había motivación, sudor y lágrimas. Luchábamos para conseguir un sueño y ya lo hemos conseguido: hemos pasado de ser 4 amigos frikis a tener una empresa con 20 trabajadores.
 
 **¿Y ahora qué?**
 

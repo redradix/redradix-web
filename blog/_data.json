@@ -1,7 +1,13 @@
 {
+  "5-errores-proyecto-digital": {
+    "title": "Los 5 errores fatales al hacer un proyecto digital",
+    "description": "Analizamos los 5 errores más graves que han cometido nuestros clientes",
+    "author": "Juan",
+    "author_link": "https://twitter.com/juanmaribeltran"
+  },
   "hora-de-aventuras": {
     "title": "Hora de aventuras",
-    "description": "Empezamos el camino de dejar atrás ser emprendedores para pasar a ser empresarios",
+    "description": "Dejamos de ser emprendedores para ser empresarios",
     "author": "Alej",
     "author_link": "https://twitter.com/fuzzyalej"
   }
