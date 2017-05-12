@@ -38,7 +38,7 @@ En este caso caben dos opciones:
 
  1. Haces caso al cliente e intentas partir de esa información para ir adelante con el proyecto (**SPOILER-> desastre**)
 
- 2. Le explicas que es imposible hacerlo de ese modo. Primero porque es información insuficiente y segundo porque puede que la solución que él tenga en la cabeza puede que no sea la mejor para conseguir sus objetivos. Lo mejor es primero hacer una fase de análisis y definición del proyecto. Luego ya se implementa.
+ 2. Le explicas que es imposible hacerlo de ese modo. Primero porque es información insuficiente y segundo porque puede que la solución que él tenga en la cabeza no sea la mejor para conseguir sus objetivos. Lo mejor es primero hacer una fase de análisis y definición del proyecto. Luego ya se implementa.
 
 El cliente nos hizo caso y fuimos por la segunda opción. Ya no hacemos proyectos del primer tipo. Ya no más.
 
@@ -55,7 +55,7 @@ Y por otro lado tenemos un problema más difícil de entender a priori: los requ
 
 ## 2) MVP: Keep it simple, sugar. O el síndrome de "no parar de pedir cosas"
 
-Mi primera *startup* (favmonster) tuve que definir y hacer un MVP. Teníamos un programador, muchas ideas y poco tiempo. Sabía que tenía que recortar en funcionalidad para poder llegar a la presentación ante los inversores en la fecha señalad. Seleccioné solo las features esenciales y seguí adelante.
+Mi primera *startup* (favmonster) tuve que definir y hacer un MVP. Teníamos un programador, muchas ideas y poco tiempo. Sabía que tenía que recortar en funcionalidad para poder llegar a la presentación ante los inversores en la fecha señalada. Seleccioné solo las features esenciales y seguí adelante.
 
 ![Lista de requisitos](/images/blog/lista.jpg "Lista de requisitos")
 
@@ -129,7 +129,7 @@ Sabemos que este punto es conflictivo y abre un debate interminable. Si tienes u
 
 Vamos a centrarnos en un caso diferente: no tienes una fecha específica y en base a otras razones se marca a fuego una fecha en el calendario.
 
-Muchas veces el *deadlines* de un proyecto es totalmente artificial. Está fabricado por el cliente sin una razón de peso detrás. Los proyectos de creación de un software son complejos, las estimaciones inexactas y los problemas e imprevistos son el pan de cada día. Hay que ser flexibles.
+Muchas veces el *deadline* de un proyecto es totalmente artificial. Está fabricado por el cliente sin una razón de peso detrás. Los proyectos de creación de un software son complejos, las estimaciones inexactas y los problemas e imprevistos son el pan de cada día. Hay que ser flexibles.
 
 A menudo a medida que se avanza en el desarrollo se descubren nuevas funcionalidades importantes, otras dejan de serlo o el proyecto necesitas pequeños cambios de rumbo. Se necesita flexibilidad en las entregas y una metodología de desarrollo ágil que se adapte al cliente.
 
