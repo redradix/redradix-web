@@ -1,4 +1,10 @@
 {
+  "comunicacion-y-remoteo": {
+    "title": "Comunicación de calidad y remoteo",
+    "description": "Cómo solucionamos el problema de la comunicación cuando remoteamos",
+    "author": "Miguel",
+    "author_link": "https://twitter.com/kanedaki"
+  },
   "5-errores-proyecto-digital": {
     "title": "Los 5 errores fatales al hacer un proyecto digital",
     "description": "Analizamos los 5 errores más graves que han cometido nuestros clientes",
