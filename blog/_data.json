@@ -1,4 +1,9 @@
-{
+{  "metodologia-de-proyectos": {
+    "title": "Metodología de Proyectos",
+    "description": "El proceso que seguimos para gestionar los proyectos de clientes",
+    "author": "Miguel",
+    "author_link": "https://twitter.com/kanedaki"
+  },
   "comunicacion-y-remoteo": {
     "title": "Comunicación de calidad y remoteo",
     "description": "Cómo solucionamos el problema de la comunicación cuando remoteamos",
