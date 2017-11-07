@@ -3960,3 +3960,15 @@ img.mfp-img {
 .project-list {
   margin-top: 4em;
 }
+
+@media only screen and (min-width: 60.625em) {
+  .list-themes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+    ul {
+      padding-left: 20px;
+      list-style-type: square;
+    }
+  }
+}
