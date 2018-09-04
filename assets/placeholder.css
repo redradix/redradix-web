@@ -1,0 +1,302 @@
+@font-face {
+  font-family: 'TTCommons-ExtraLight';
+  src: url(../fonts/TTCommons-ExtraLight.ttf);
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'TTCommons-Regular';
+  src: url(../fonts/TTCommons-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'TTCommons-DemiBold';
+  src: url(../fonts/TTCommons-DemiBold.ttf);
+  font-weight: 500;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body * {
+  opacity: 0;
+}
+
+body .temporal-placeholder {
+  opacity: 1;
+}
+
+body .temporal-placeholder * {
+  opacity: 1;
+}
+
+.temporal-placeholder {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 686px;
+  text-align: center;
+  z-index: 999999;
+}
+
+@media (max-width: 667px) {
+  .temporal-placeholder {
+    min-height: 0;
+  }
+}
+
+.temporal-placeholder::before,
+.temporal-placeholder::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(130deg, #fc5455, #6a8ee1, #31e0af);
+  background-size: 400vw 100%;
+  background-repeat: no-repeat;
+  animation: gradientAnimationBefore linear 30s infinite;
+  transform: rotate(0deg);
+  will-change: background;
+  z-index: 0;
+}
+
+.temporal-placeholder::after {
+  display: block;
+  background: linear-gradient(130deg, #31e0af, #6a8ee1, #fc5455);
+  background-size: 400vw 100%;
+  background-repeat: no-repeat;
+  animation: gradientAnimationAfter linear 30s infinite;
+  transform: scale(1, -1);
+}
+
+.temporal-placeholder .placeholder-wrapper {
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  padding: 64px 0;
+  width: 100%;
+  max-width: 540px;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+@media (max-width: 667px) {
+  .temporal-placeholder .placeholder-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 16px;
+    height: 100%;
+  }
+}
+
+.temporal-placeholder .placeholder-isotipo {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  transform: rotate(0deg);
+  opacity: 1;
+  transition: transform 1s ease, opacity 1s;
+}
+
+.temporal-placeholder .placeholder-isotipo.hidden {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 667px) {
+  .temporal-placeholder .placeholder-isotipo {
+    margin-bottom: 40px;
+  }
+
+  .temporal-placeholder .placeholder-isotipo svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.temporal-placeholder .placeholder-isotipo svg path {
+  fill: #ffffff;
+}
+
+.temporal-placeholder .placeholder-text {
+  display: block;
+  position: relative;
+  margin-bottom: 40px;
+  font-family: 'TTCommons-Regular';
+  font-size: 23px;
+  letter-spacing: 0.3px;
+  line-height: 29px;
+  color: #ffffff;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 1s, opacity 1s;
+}
+
+.temporal-placeholder .placeholder-text.hidden {
+  opacity: 0;
+  transform: translateY(25%);
+}
+
+@media (max-width: 667px) {
+  .temporal-placeholder .placeholder-text {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.temporal-placeholder .placeholder-text bold {
+  font-family: 'TTCommons-DemiBold';
+}
+
+.temporal-placeholder .placeholder-text::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.placeholder-countdown {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.temporal-placeholder .countdown-text {
+  display: block;
+  position: relative;
+  margin: 0;
+  font-family: 'TTCommons-ExtraLight';
+  font-size: 60px;
+  letter-spacing: 0.5px;
+  line-height: 60px;
+  color: #ffffff;
+  min-width: 64px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.temporal-placeholder .countdown-text.hidden {
+  opacity: 0;
+  transform: translateY(25%);
+}
+
+.temporal-placeholder .countdown-text + .countdown-text {
+  margin-left: 64px;
+}
+
+.temporal-placeholder .countdown-text + .countdown-text::before {
+  content: ':';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -32px;
+  transform: translateY(-50%);
+}
+
+.temporal-placeholder .countdown-text::after {
+  display: block;
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'TTCommons-DemiBold';
+  font-size: 13px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+
+@media (max-width: 667px) {
+  .placeholder-countdown {
+    padding-top: 25px;
+  }
+
+  .temporal-placeholder .countdown-text {
+    font-size: 40px;
+    min-width: 40px;
+  }
+
+  .temporal-placeholder .countdown-text + .countdown-text {
+    margin-left: 32px;
+  }
+
+  .temporal-placeholder .countdown-text + .countdown-text::before {
+    left: -20px;
+  }
+
+  .temporal-placeholder .countdown-text::after {
+    bottom: -7px;
+    font-size: 10px;
+  }
+}
+
+.temporal-placeholder .countdown-text.days::after {
+  content: 'Días'
+}
+
+.temporal-placeholder .countdown-text.hours::after {
+  content: 'Horas'
+}
+
+.temporal-placeholder .countdown-text.minutes::after {
+  content: 'Minutos'
+}
+
+.temporal-placeholder .countdown-text.seconds::after {
+  content: 'Segundos'
+}
+
+@keyframes gradientAnimationBefore {
+  0% {
+    background-position: 0vw 0%;
+  }
+
+  50% {
+    background-position: 400vw 0%;
+  }
+
+  50.1% {
+    background-position: -400vw 0%;
+  }
+
+  100% {
+    background-position: 0vw 0%;
+  }
+}
+
+@keyframes gradientAnimationAfter {
+  0% {
+    background-position: -400vw 0%;
+  }
+
+  50% {
+    background-position: 0vw 0%;
+  }
+
+  50.1% {
+    background-position: 0vw 0%;
+  }
+
+  100% {
+    background-position: 400vw 0%;
+  }
+}
