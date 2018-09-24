@@ -1,5 +1,5 @@
 function updateTime() {
-  var countDownDate = new Date('Sep 24, 2018 09:00:00').getTime();
+  var countDownDate = new Date('Sep 28, 2018 23:59:59').getTime();
   var clock = document.querySelector('.placeholder-countdown');
   var days = clock.querySelector('.days');
   var hours = clock.querySelector('.hours');
